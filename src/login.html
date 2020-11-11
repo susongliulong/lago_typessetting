@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{margin: 0px;padding: 0px;}
+    p,h1,h2,h3,h4,h5,h6,ul,ol,li {
+        margin: 0px;
+        padding: 0px;
+    }
+    a{
+        text-decoration: none;
+    }
+    li{
+        list-style: none;
+        color: black;
+    }
+    input{
+        border: none;
+    }
+
+    .fl{
+        float: left;
+    }
+    .fr{
+        float:right;
+    }
+    .clearFixed:after{
+        content: "";
+        display: block;
+        clear:both;
+    }
+    .blue{
+        height: 350px;
+        background: #00b38a;
+    }
+    .white{
+        height: 246px;
+        background: #afb5c0;
+    }
+    .content{
+        width: 704px;
+        height: 480px;
+        position: relative;
+        margin: 0 auto;
+        margin-top: -524px;
+
+    }
+    .content .img1{
+        margin-bottom: 32px;
+    }
+    .content .login{
+        background: white;
+        border: 1px solid #afb5c0;
+    }
+    .content .login .header .img2{
+        width: 50px;
+        height: 50px;
+        margin: 6px;
+    }
+    .content .login .header .fast{
+        display: block;
+        width: 80px;
+        height: 12px;
+        border: 1px solid #e6e1d0;
+        font-size: 12px;
+        line-height: 12px;
+        text-align: center;
+        margin-top: 6px;
+    }
+    .content .login .left{
+        margin-left: 76px;
+        padding-right: 50px;
+        width: 300px;
+        border-right: 1px solid #555555;
+    }
+    .content .login .left .line1 span{
+        width: 148px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        border-bottom: 1px solid #555555;
+    }
+    .content .login .left .line1 span:first-child{
+        border-bottom: 2px solid #00b38a;
+    }
+    .content .login .left .line2 input{
+        width: 296px;
+        height: 56px;
+        border-bottom: 1px solid #555555;
+        padding-top: 16px;
+    }
+    .content .login .left .line2 input:nth-of-type(2){
+        height: 52px;
+    }
+    .content .login .left .line3 .forget_pass{
+        margin: 10px 0px;
+        color: #00b38a;
+    }
+    .content .login .left .line3 .login{
+        width: 296px;
+        height: 44px;
+        border-radius: 5px;
+        background: #00b38a;
+        line-height: 44px;
+        text-align: center;
+    }
+    .content .login .right{
+        width: 132px;
+        height: 90px;
+        padding: 90px 70px;
+    }
+    .content .login .right p{
+        font-size: 12px;
+    }
+    .content .login .right .line1{
+        margin-bottom: 46px;
+    }
+    .content .login .right .line1 img{
+        width: 13px;
+        height: 11px;
+    }
+    .content .login .right .line2 .images img{
+        margin-right: 13px;
+    }
+
+
+</style>
+<body>
+    <div class="blue"></div>
+    <div class="white"></div>
+    <div class="content">
+        <img src="img2/logo.png" alt="" class="img1">
+        <div class="login clearFixed">
+            <div class="header clearFixed">
+                <img src="img/direct.png" alt="" class="img2 fl">
+                <span class="fast fl">微信快捷登录</span>
+            </div>
+            <div class="left fl">
+                <div class="line1 clearFixed">
+                    <span class="pass_login fl">密码登录</span>
+                    <span class="verify_login fl">验证码登录</span>
+                </div>
+                <div class="line2">
+                    <input type="text" class="tel" placeholder="请输入常用手机号/邮箱">
+                    <input type="text"placeholder="请输入密码" class="pass">
+                </div>
+                <div class="line3">
+                    <span class="forget_pass fr">忘记密码?</span>
+                    <input type="submit" class="login" value="登录">
+                </div>
+            </div>
+            <div class="right fl">
+                <div class="line1">
+                  <p class="txt1">还没有账号</p>
+                  <p class="register">立即注册 <a href=""><img src="img2/icon-arrow-right.png" alt=""></a></p>
+                </div>
+                
+                <div class="line2">
+                    <p class="txt2">使用以下账号直接登录</p>
+                    <p class="images">
+                        <a href=""><img src="img2/icon-sina1.png" alt=""></a>
+                        <a href=""><img src="img2/icon-wechat.png" alt=""></a>
+                        <a href=""><img src="img2/icon-tencent-hover.png" alt=""></a>
+                        <a href=""><img src="img2/icon-baidu.png" alt=""></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
